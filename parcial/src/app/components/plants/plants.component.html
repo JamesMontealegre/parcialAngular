@@ -1,0 +1,30 @@
+<div style="margin-left: 40px; margin-right: 40px">
+  <table class="table">
+    <thead style="background-color: black; color: white">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre común</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Clima</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let plant of plantsList; let indexOfelement = index">
+      <tr>
+        <th scope="row">{{ indexOfelement + 1 }}</th>
+        <td>{{ plant.nombre_comun }}</td>
+        <td>{{ plant.tipo }}</td>
+        <td>{{ plant.clima }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <div style="display: flex">
+      <p style="margin-right: 5px">Total plantas de interior:</p>
+      <p>{{ numInPlants }}</p>
+    </div>
+    <div style="display: flex">
+      <p style="margin-right: 5px">Total plantas de exterior:</p>
+      <p>{{ numOutPlants }}</p>
+    </div>
+  </div>
+</div>
