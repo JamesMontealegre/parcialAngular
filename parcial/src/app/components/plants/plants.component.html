@@ -1,6 +1,6 @@
-<div style="margin-left: 40px; margin-right: 40px">
+<div class="plant-main-content">
   <table class="table">
-    <thead style="background-color: black; color: white">
+    <thead>
       <tr>
         <th scope="col">#</th>
         <th scope="col">Nombre común</th>
@@ -17,14 +17,13 @@
       </tr>
     </tbody>
   </table>
-  <div>
-    <div style="display: flex">
-      <p style="margin-right: 5px">Total plantas de interior:</p>
-      <p>{{ numInPlants }}</p>
-    </div>
-    <div style="display: flex">
-      <p style="margin-right: 5px">Total plantas de exterior:</p>
-      <p>{{ numOutPlants }}</p>
-    </div>
+
+  <div class="number-plants">
+    <p class="label-num-plant">Total plantas de interior:</p>
+    <p>{{ numInPlants }}</p>
+  </div>
+  <div class="number-plants">
+    <p class="label-num-plant">Total plantas de exterior:</p>
+    <p>{{ numOutPlants }}</p>
   </div>
 </div>
