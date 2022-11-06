@@ -6,6 +6,7 @@ import { PlantService } from 'src/app/services/plant.service';
 import { PlantsComponent } from './plants.component';
 import { IPlant } from '../../interfaces/plant.interface';
 import { faker } from '@faker-js/faker';
+import { By } from '@angular/platform-browser';
 
 describe('PlantsComponent', () => {
   let component: PlantsComponent;
